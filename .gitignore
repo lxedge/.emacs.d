@@ -1,0 +1,6 @@
+straight/
+auto-save-list/
+lisp/*.el~
+*~
+*.last
+

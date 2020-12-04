@@ -1,0 +1,42 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/miles/.emacs.d/" . "lisp/")
+ ("/Users/miles/" . ".emacs.d/")
+ ("/Users/" . "miles/")
+ ("/" . "Users/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/miles/.emacs.d/lisp/"
+ "/Users/miles/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init-paredit.el"
+ "init-common-lisp.el"
+ "init.el"
+ "init-window.el"
+ "init-settings.el"
+ "init-themes.el"
+ "init-company.el"
+ "init-straight.el"
+ "early-init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/miles/.emacs.d/lisp/" (24521 11155 632600 349000) "init-settings.el" "init-themes.el~" "init-settings.el~" "init-company.el~" "init-common-lisp.el~" "init-common-lisp.el" "init-company.el" "init-straight.el" "init-window.el" "init-window.el~" "init-paredit.el~" "init-paredit.el" "init-themes.el" "init-straight.el~" "../" "./")
+
+ ("/Users/miles/.emacs.d/" (24521 11156 225145 372000) "early-init.el~" ".git/" "recentf" "early-init.el" "init.el" "auto-save-list/" "straight/" "recentf~" "ido.last~" "lisp/" "init.el~" "ido.last" "../" "./")
+
+ ("/Users/miles/" (24520 50077 336519 804000) ".conda/" "emacs.d.purcell/" ".viminfo" ".bash_history" "emacs.d.lxedge/" ".gitconfig" ".cache/" ".python_history" "Downloads/" ".rediscli_history" ".oh-my-zsh/" ".gem/" ".bash_profile" ".m2/" ".vscode/" ".mysql_history" "Documents/" ".npm/" ".jupyter/" ".tldrc/" ".ipynb_checkpoints/" "lxedge/" ".Trash/" "opt/" ".proxychains/" ".gradle/" "Applications/" ".vimrc" "Movies/" ".ssh/" ".anaconda/" "emacs.d/" ".ansible/" "WeDrive/" ".flutter" "package-lock.json" "Public/" ".umi/" ".lein/" ".sbt/" ".android/" "cityfruit/" ".emacs.d/" ".spyder-py3/" ".oracle_jre_usage/" ".doom.d/" ".lesshst" ".matplotlib/" ".npmrc" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".flutter_tool_state" "Postman/" ".clojure_history" ".dartServer/" "node_modules/" ".atom/" ".shell.pre-oh-my-zsh" ".zshrc.backup" "Pictures/" "huicong/" ".psql_history" "VPN/" ".mix/" ".zshrc" "Untitled.ipynb" ".z" ".CFUserTextEncoding" ".yarnrc" "dotfiles/" ".gnupg/" ".DS_Store" ".dart/" "Untitled1.ipynb" ".zcompdump-miles的MacBook Pro-5.3" ".squirrel-sql/" ".ivy2/" ".docker/" ".wns/" ".clojure/" ".condarc" "Music/" ".config/" ".hex/" ".eclipse/" ".SwitchHosts/" "../" "./")
+
+ ("/Users/" (23972 5699 905912 765000) "Shared/" "miles/" ".localized" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
