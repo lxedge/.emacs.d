@@ -7,7 +7,7 @@
 
 (require 'init-company)
 (require 'init-paredit)
-
+(require 'init-isearch)
 ;; (require 'init-common-lisp)
 
 
