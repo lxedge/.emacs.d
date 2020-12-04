@@ -9,11 +9,8 @@
 ;; M-f; M-b: through camelCaseWords
 (global-subword-mode 0)
 
-(setq default-frame-alist
-  '((background-color . "cornsilk")))
-
-;; recent
-;; (add-hook 'after-init-hook (recentf-mode 1))
+;; (setq default-frame-alist
+;;       '((background-color . "cornsilk")))
 
 (defun lxedge/clean-whitespace ()
   ""
