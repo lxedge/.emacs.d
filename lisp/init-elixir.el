@@ -33,6 +33,15 @@
   :hook
   (elixir-mode . lsp)
   :init
-  (add-to-list 'exec-path "/Users/miles/lsp/elixir-ls-1.10.4"))
+  (add-to-list 'exec-path "/Users/miles/lsp/elixir-ls/release"))
+
+
+;; (use-package eglot
+;;   :init
+;;   (add-hook 'elixir-mode-hook 'eglot-ensure)
+
+;;   :config
+;;   (add-to-list 'eglot-server-programs '(elixir-mode "/User/miles/lsp/elixir-ls-1.10.4/language_server.sh")))
+
 
 (provide 'init-elixir)

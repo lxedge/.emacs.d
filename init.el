@@ -7,6 +7,7 @@
 (require 'init-grep)
 (require 'init-isearch)
 (require 'init-ivy)
+(require 'init-exec-path-from-shell)
 
 (require 'init-company)
 (require 'init-paredit)
