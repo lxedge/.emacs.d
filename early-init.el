@@ -18,7 +18,8 @@
 (add-hook 'after-init-hook 'icomplete-mode)
 ;; recentf-mode
 (add-hook 'after-init-hook (recentf-mode 1))
-
+;; line numbers
+(global-display-line-numbers-mode)
 
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)

@@ -6,6 +6,7 @@
 (require 'init-themes)
 (require 'init-grep)
 (require 'init-isearch)
+(require 'init-ivy)
 
 (require 'init-company)
 (require 'init-paredit)
