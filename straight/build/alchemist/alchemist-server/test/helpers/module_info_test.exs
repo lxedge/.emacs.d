@@ -1,1 +1,0 @@
-/Users/miles/.emacs.d/straight/repos/alchemist.el/alchemist-server/test/helpers/module_info_test.exs

@@ -1,1 +1,0 @@
-/Users/miles/.emacs.d/straight/repos/color-theme-sanityinc-solarized/color-theme-sanityinc-solarized.el
