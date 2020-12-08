@@ -7,8 +7,8 @@
 
 (setq package-archives
       '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-	("melpa" . "http://elpa.emacs-china.org/melpa/")
-	("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/")))
+        ("melpa" . "http://elpa.emacs-china.org/melpa/")
+        ("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/")))
 
 ;; gc setting
 (add-hook 'after-init-hook (lambda () (setq gc-cons-threshold (* 1024 1024))))
@@ -24,6 +24,8 @@
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)
 (setq inhibit-startup-screen t)
+;; disbale tab indent
+(setq-default indent-tabs-mode nil)
 
 ;; disable tool bar
 (when (fboundp 'tool-bar-mode)
@@ -45,5 +47,5 @@
 ;; frame title
 (setq frame-title-format
       '((:eval (if (buffer-file-name)
-		   (abbreviate-file-name (buffer-file-name))
-		 "%b"))))
+                   (abbreviate-file-name (buffer-file-name))
+                 "%b"))))

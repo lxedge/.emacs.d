@@ -3,6 +3,7 @@
 (require 'init-straight)
 (require 'init-settings)
 (require 'init-window)
+(require 'init-sidebar)
 (require 'init-themes)
 (require 'init-grep)
 (require 'init-isearch)

@@ -15,11 +15,11 @@
 
 (use-package alchemist
   :config
-  (setq alchemist-mix-command "/usr/local/bin/mix")
-  (setq alchemist-mix-env "dev")
-  (setq alchemist-iex-program-name "/usr/local/bin/iex")
-  (setq alchemist-execute-command "/usr/local/bin/elixir")
-  (setq alchemist-compile-command "/usr/local/bin/elixirc")
+  (setq alchemist-mix-command "/usr/bin/mix")
+  (setq alchemist-mix-env "prod")
+  (setq alchemist-iex-program-name "/usr/bin/iex")
+  (setq alchemist-execute-command "/usr/bin/elixir")
+  (setq alchemist-compile-command "/usr/bin/elixirc")
   ;; Compile your project with alchemist-mix-compile after saving a buffer.
   (setq alchemist-hooks-compile-on-save t)
   ;; (setq alchemist-goto-erlang-source-dir "/path/to/erlang/source/")
@@ -33,7 +33,7 @@
   :hook
   (elixir-mode . lsp)
   :init
-  (add-to-list 'exec-path "/Users/miles/lsp/elixir-ls/release"))
+  (add-to-list 'exec-path "/home/xing/apps/elixir-ls/release"))
 
 
 ;; (use-package eglot

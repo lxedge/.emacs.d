@@ -1,1 +1,1 @@
-("~/huicong/searchapi/" "~/.emacs.d/")
+("~/.emacs.d/" "~/hc360/searchapi/")
