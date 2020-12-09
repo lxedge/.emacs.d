@@ -14,6 +14,7 @@
 (require 'init-paredit)
 
 (require 'init-projectile)
+(require 'init-version-control)
 
 (require 'init-elixir)
 
