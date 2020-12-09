@@ -4,17 +4,28 @@
 ;; No need to learn sed script, just learn Emacs.
 
 (setq-default grep-highlight-matches t
-	      grep-scroll-output t)
+              grep-scroll-output t)
 
 (use-package wgrep)
 
-;; 暂时还没有配好 rg
 (use-package rg
   :config
   (rg-enable-default-bindings))
 
 (dolist (key (list (kbd "C-c C-q") (kbd "w")))
   (define-key grep-mode-map key 'wgrep-change-to-wgrep-mode))
+
+(use-package symbol-overlay
+  :init
+  (add-hook 'after-init-hook 'symbol-overlay-mode)
+
+  :config
+  (define-key symbol-overlay-mode-map (kbd "M-i") 'symbol-overlay-put)
+
+  :bind
+  (("M-i" . symbol-overlay-put)
+   ("M-n" . symbol-overlay-jump-next)
+   ("M-p" . symbol-overlay-jump-prev)))
 
 
 (provide 'init-grep)
