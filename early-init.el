@@ -10,16 +10,10 @@
         ("melpa" . "http://elpa.emacs-china.org/melpa/")
         ("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/")))
 
-;; gc setting
-(add-hook 'after-init-hook (lambda () (setq gc-cons-threshold (* 1024 1024))))
-;; does auto completion in minibuffer, for buffer/file names.
-(add-hook 'after-init-hook 'ido-mode)
-;; For all minibuffer prompt completion.
-(add-hook 'after-init-hook 'icomplete-mode)
-;; recentf-mode
-(add-hook 'after-init-hook (recentf-mode 1))
 ;; line numbers
 (global-display-line-numbers-mode)
+;; M-f; M-b: through camelCaseWords
+(global-subword-mode 0)
 
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)
@@ -49,3 +43,16 @@
       '((:eval (if (buffer-file-name)
                    (abbreviate-file-name (buffer-file-name))
                  "%b"))))
+
+;; gc setting
+(add-hook 'after-init-hook (lambda () (setq gc-cons-threshold (* 1024 1024))))
+;; does auto completion in minibuffer, for buffer/file names.
+(add-hook 'after-init-hook 'ido-mode)
+;; For all minibuffer prompt completion.
+(add-hook 'after-init-hook 'icomplete-mode)
+;; recentf-mode
+(add-hook 'after-init-hook (recentf-mode 1))
+;; terminal
+(add-hook 'term-mode-hook (lambda () (setq line-space 0)))
+;; auto clean up whitespace
+(add-hook 'before-save-hook 'whitespace-cleanup)

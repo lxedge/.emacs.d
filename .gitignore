@@ -8,4 +8,5 @@ straight/
 projectile-bookmarks.eld
 recentf
 .lsp-session*
-
+.session
+.uptimes.el

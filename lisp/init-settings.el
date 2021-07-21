@@ -1,5 +1,7 @@
 ;;; -*- lexical-binding: t -*-
 
+;; not use anymore
+
 ;; Settings which needn't require any package
 
 ;; terminal
