@@ -19,6 +19,6 @@
 ;; not used recently
 ;; (require 'init-common-lisp)
 
-;; (require 'init-elixir)
+(require 'init-elixir)
 
 (provide 'init)
