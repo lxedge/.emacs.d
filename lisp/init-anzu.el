@@ -3,8 +3,8 @@
 (use-package anzu
   :straight
   (anzu :type git
-	:host github
-	:repo "emacsorphanage/anzu")
+        :host github
+        :repo "emacsorphanage/anzu")
 
   :init
   (add-hook 'after-init-hook 'global-anzu-mode))
@@ -18,4 +18,4 @@
   (define-key isearch-mode-map (kbd "C-c C-o") 'isearch-occur))
 
 
-(provide 'init-isearch)
+(provide 'init-anzu)
