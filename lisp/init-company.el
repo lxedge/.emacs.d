@@ -12,7 +12,7 @@
   :config
   (diminish 'company "company")
   (dolist (backend '(company-eclim company-semantic))
-	      (delq backend company-backends)))
+              (delq backend company-backends)))
 
 
 (provide 'init-company)
