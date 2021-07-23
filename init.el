@@ -11,7 +11,7 @@
 (require 'init-ivy)
 (require 'init-anzu)
 
-;; (require 'init-exec-path-from-shell)
+(require 'init-exec-path-from-shell)
 (require 'init-company)
 (require 'init-paredit)
 (require 'init-projectile)
@@ -20,5 +20,6 @@
 ;; (require 'init-common-lisp)
 
 (require 'init-elixir)
+(require 'init-clojure)
 
 (provide 'init)
