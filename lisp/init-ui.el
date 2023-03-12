@@ -1,5 +1,6 @@
 ;;; -*- lexical-binding: t -*-
 
+;; TODO: 重新配置，暂时不了解 config 配置了什么
 (use-package treemacs
   :ensure t
   :defer t
@@ -84,13 +85,49 @@
   :ensure t
   :config (treemacs-icons-dired-mode))
 
-(use-package treemacs-magit
-  :after treemacs magit
-  :ensure t)
+;; (use-package treemacs-magit
+;;   :after treemacs magit
+;;   :ensure t)
 
 (use-package treemacs-persp ;;treemacs-persective if you use perspective.el vs. persp-mode
   :after treemacs persp-mode ;;or perspective vs. persp-mode
   :ensure t
   :config (treemacs-set-scope-type 'Perspectives))
 
-(provide 'init-sidebar)
+
+;; themes
+
+(use-package color-theme-sanityinc-solarized)
+(use-package color-theme-sanityinc-tomorrow)
+
+(setq custom-safe-themes t)
+(setq-default custom-enabled-themes '(sanityinc-tomorrow-bright))
+
+(defun reapply-themes ()
+  "Forcibly load the themes listed in `custom-enabled-themes'."
+  (dolist (theme custom-enabled-themes)
+    (unless (custom-theme-p theme)
+      (load-theme theme)))
+  (custom-set-variables `(custom-enabled-themes (quote ,custom-enabled-themes))))
+
+(defun light ()
+  "Activate a light color theme."
+  (interactive)
+  (setq custom-enabled-themes '(sanityinc-tomorrow-day))
+  (reapply-themes))
+
+(defun dark ()
+  "Activate a dark color theme."
+  (interactive)
+  (setq custom-enabled-themes '(sanityinc-tomorrow-bright))
+  (reapply-themes))
+
+(add-hook 'after-init-hook 'reapply-themes)
+
+;; nyan cat
+
+(use-package nyan-mode
+  :ensure t
+  :init (nyan-mode))
+
+(provide 'init-ui)

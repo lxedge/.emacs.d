@@ -56,3 +56,12 @@
 (add-hook 'term-mode-hook (lambda () (setq line-space 0)))
 ;; auto clean up whitespace
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+(setq
+ backup-directory-alist `((".*" . ,temporary-file-directory))
+ auto-save-file-name-transforms `((".*" ,temporary-file-directory t))
+ backup-by-copying t
+ delete-old-versions t
+ kept-new-versions 6
+ kept-old-versions 2
+ version-control t)
