@@ -22,4 +22,13 @@
   (setq which-key-idle-delay 1)
   (which-key-setup-side-window-bottom))
 
+;; 当前文件搜索相同的词
+(use-package symbol-overlay
+  :ensure t
+  :init (add-hook 'after-init-hook 'symbol-overlay-mode)
+  :bind (("M-i" . symbol-overlay-put)
+         ("M-n" . symbol-overlay-jump-next)
+         ("M-p" . symbol-overlay-jump-prev)
+         ("M-SPC" . symbol-overlay-rename)))
+
 (provide 'init-edit)
