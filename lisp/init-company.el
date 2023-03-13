@@ -10,7 +10,7 @@
   ;; (after-init . global-company-mode)
 
   :config
-  (diminish 'company "company")
+  (diminish 'company "comp")
   (dolist (backend '(company-eclim company-semantic))
               (delq backend company-backends)))
 

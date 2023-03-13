@@ -6,12 +6,14 @@
   :init (add-hook 'after-init-hook 'global-diff-hl-mode)
   :config (define-key diff-hl-mode-map (kbd "<left-fringe> <mouse-1>") 'diff-hl-diff-goto-hunk))
 
+
+;; https://docs.projectile.mx/projectile/configuration.html
 (use-package projectile
   :ensure t
   :init (projectile-mode +1)
   :bind (:map projectile-mode-map
               ("s-p" . projectile-command-map))
-  :config (setq-default projectile-mode-line-prefix " Proj"))
+  :config (setq projectile-project-search-path '("~/practice/" "~/workspace/")))
 
 ;; (use-package ibuffer-projectile
 ;;   :init
@@ -20,7 +22,6 @@
 ;;               (ibuffer-projectile-set-filter-groups)
 ;;               (unless (eq ibuffer-sorting-mode 'alphabetic)
 ;;                 (ibuffer-do-sort-by-alphabetic))))
-
 ;;   :config
 ;;   (setq ibuffer-formats
 ;;         '((mark modified read-only " "
