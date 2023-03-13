@@ -6,16 +6,15 @@
 ;; (require 'init-anzu)
 ;; (require 'init-grep)
 ;; (require 'init-exec-path-from-shell)
-;; diff-hl 侧边栏添加 vcs 状态
-(require 'init-version-control)
+
 ;; UI 相关配置
 (require 'init-ui)
 ;; 编辑功能相关
 (require 'init-edit)
 (require 'init-ivy)
-
 (require 'init-company)
-(require 'init-projectile)
+;; 项目相关
+(require 'init-project)
 
 ;; not used recently
 ;; (require 'init-common-lisp)
