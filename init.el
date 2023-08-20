@@ -5,7 +5,7 @@
 ;; 感觉和 symbol-overlay 差不多，先去除
 ;; (require 'init-anzu)
 ;; (require 'init-grep)
-;; (require 'init-exec-path-from-shell)
+(require 'init-exec-path-from-shell)
 
 ;; UI 相关配置
 (require 'init-ui)
@@ -19,8 +19,8 @@
 ;; not used recently
 ;; (require 'init-common-lisp)
 ;; (require 'init-python)
-;; (require 'init-golang)
 
+(require 'init-go)
 (require 'init-elixir)
 (require 'init-clojure)
 (require 'init-rust)

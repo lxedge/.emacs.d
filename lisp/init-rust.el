@@ -30,10 +30,13 @@
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
 
 (use-package rustic
+  :ensure t
   :config (setq rustic-lsp-client 'eglot))
 
 (use-package cargo-mode
+  :ensure t
   :config
-  (add-hook 'rust-mode-hook 'cargo-minor-mode))
+  (add-hook 'rust-mode-hook 'cargo-minor-mode)
+  (setq compilation-scroll-output t))
 
 (provide 'init-rust)
